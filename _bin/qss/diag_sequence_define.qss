@@ -1,0 +1,118 @@
+QHeaderView                    
+{
+    background:transparent;      
+}
+
+
+QHeaderView::section           // 标题头 每个单独的标题区域
+
+{
+
+    font-size:14px;                // 每个标题的字体大小
+
+    font-family:"Microsoft YaHei"; // 每个标题的字体类型
+
+    color:#FFFFFF;                 // 每个标题的字体颜色
+
+ 
+
+    background:#60669B;            // 每个标题区域的背景色
+
+    border:none;                   // 每个标题区域的边框
+
+    text-align:left;               // 每个标题的对齐方式（貌似不能用）。建议使用tableWidget->horizontalHeader()->setDefaultAlignment(Qt::AlignLeft | Qt::AlignVCenter)
+
+ 
+
+ 
+
+    min-height:49px;               // 标题区域的高度
+
+    max-height:49px;               //
+
+ 
+
+    margin-left:0px;               // 每个标题区域的margin
+
+    padding-left:0px;              // 每个标题区域的padding
+
+}
+
+QTableWidget::item::selected      // 每个单元格被选中状态
+
+{
+
+    color:red;                        // 每个单元格被选中时 字体颜色
+
+    background:#EFF4FF;               // 每个单元格被选中时 背景颜色
+
+}
+
+
+QTableWidget::item                // 每个单元格
+
+{
+
+    border-bottom:1px solid #EEF1F7 ; // 只显示每个单元格下边框
+
+}
+
+
+QScrollBar::handle:vertical        // 垂直滚动条 handle
+
+{
+
+    background: rgba(255,255,255,20%); // 垂直滚动条 handle 的背景色
+
+    border: 0px solid grey;            // 垂直滚动条 handle 边框
+
+    border-radius:3px;                 // 垂直滚动条 handle 圆角
+
+    width: 8px;                        // 垂直滚动条 handle 宽度
+
+}
+
+
+
+QScrollBar::handle:vertical        // 垂直滚动条 handle
+
+{
+
+    background: rgba(255,255,255,20%); // 垂直滚动条 handle 的背景色
+
+    border: 0px solid grey;            // 垂直滚动条 handle 边框
+
+    border-radius:3px;                 // 垂直滚动条 handle 圆角
+
+    width: 8px;                        // 垂直滚动条 handle 宽度
+
+}
+
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical // 垂直滚动条  handle上、下区域（未被handle占用的区域）
+
+{
+
+    background:rgba(255,255,255,10%);                            // 垂直滚动条 handle上、下区域的背景色
+
+}
+
+
+QScollBar::add-line:vertical, QScrollBar::sub-line:vertical  // 垂直滚动条 最顶端与最低端的区域
+
+{
+
+    background:transparent;                                      // 垂直滚动条 最顶端与最低端区域的背景色
+
+}
+
+
+
+
+ 
+
+ 
+
+
+ 
+
